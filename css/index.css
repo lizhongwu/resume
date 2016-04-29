@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none font-family : Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", sans-self;
+}
+
+html, body {
+    background-color: #20406b;
+    user-select: none;
+    -webkit-user-select: none
+}
+
+#main {
+    width: 640px;
+    height: 960px;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+#list {
+}
+
+#list > li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: none;
+    z-index: 1
+}
+
+#list li.zIndex {
+    z-index: 2
+}
+
+#list > li:nth-of-type(1){
+    display: block;
+}
+
+#list > li {
+    background: url("../img/bg.jpg") 100% 100%;
+}
+
+.head {
+    position: relative;
+}
+
+.head .p1_title img {
+    display: block;
+    position: absolute;
+    width: 700px;
+    height: 268px;
+    top: 60px;
+    left: 50%;
+    margin-left: -350px;
+}
+
+.p1_head {
+    animation: 1.8s mytitle infinite;
+}
+
+@-webkit-keyframes mytitle {
+    0% {
+        opacity: 1;
+        transform: scale(1)
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.1)
+    }
+}
+
+@keyframes mytitle {
+    0% {
+        opacity: 1;
+        transform: scale(1)
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.25)
+    }
+}
+
+.p1_portrait {
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 400px;
+    left: 50%;
+    margin-left: -100px;
+}
+
+.p1-en-name {
+    display: block;
+    position: absolute;
+    width: 330px;
+    height: 150px;
+    top: 650px;
+    left: 50%;
+    margin-left: -165px;
+}
+
+.p1-name {
+    display: block;
+    position: absolute;
+    width: 170px;
+    height: 65px;
+    top: 780px;
+    left: 50%;
+    margin-left: -85px;
+}
+
+#arrow {
+    width: 3rem;
+    position: absolute;
+    left: 50%;
+    bottom: .8rem;
+    z-index: 99;
+    margin-left: -1.5rem;
+    animation: 1s infinite arrowTop;
+    -webkit-animation: 1s infinite arrowTop;
+}
+
+@-webkit-keyframes arrowTop{
+    0%{ opacity:0; -webkit-transform:translate(0,0);}
+    60%{ opacity:1; -webkit-transform:translate(0,-10px);}
+    100%{ opacity:0; -webkit-transform:translate(0,-30px);}
+}
+@keyframes arrowTop{
+    0%{ opacity:0; transform:translate(0,0);}
+    60%{ opacity:1; transform:translate(0,-10px);}
+    100%{ opacity:0; transform:translate(0,-30px);}
+}
