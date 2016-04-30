@@ -1,41 +1,69 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head lang="en">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=640px, user-scalable=no"/>
     <title></title>
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="animate.css"/>
 </head>
 <body>
+<!--
+h5场景分析步骤:
+1.页面适配
+2.处理上下滑动的逻辑
+3.增加css3动画效果
+-->
 <div id="main">
-    <ul id="list">
-        <li class="head">
-            <div class="p1_title">
-                <img src="img/p1-title.png" alt=""/>
-                <img src="img/p1-title.png" alt="" class="p1_head"/>
+    <ul>
+        <li class="zIndex">
+            <h2 class="animated bounceIn">个人简历</h2>
+            <div id="cube">
+                <ul id="cubeBox">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </div>
-            <div>
-                <img src="img/p1-portrait.png" alt="" class="p1_portrait animated fadeInUp"/>
-            </div>
-            <div>
-                <img src="img/p1-en-name.png" alt="" class="p1-en-name animated zoomIn"/>
-            </div>
-            <div>
-                <img src="img/p1-name.png" alt="" class="p1-name animated bounceInLeft"/>
-            </div>
-
         </li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
+        <li>
+            <div class="a1">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+            <h4 class="animated slideInLeft">职业技能:
+                <br/>原生JS H5 CSS3 移动端
+                <br/>JQuery Zepto
+                <br/>Node.js angularjs/react
+            </h4>
+        </li>
+        <li style="transform-style: preserve-3d;perspective: 800px">
+            <div class="a2">
+                <h2>基本信息</h2>
+                <h4>
+                    姓名:李仲午<br/><br/><br/>
+                    年龄:25<br/><br/><br/>
+                    户籍地址:北京西城<br/><br/><br/>
+                    工作年限:3年<br/><br/><br/>
+                    求职职位:高级前端开发工程师<br/>
+                </h4>
+            </div>
+        </li>
+        <li>
+            <div class="a3">
+                <p>手机:133-0000-6666</p>
+                <p>QQ邮箱:1289205959@qq.com</p>
+            </div>
+            <h2 class="animated bounceInUp">谢 谢 !</h2>
+        </li>
     </ul>
-    <img src="img/arr.png" id="arrow">
 </div>
-
-<script src="js/jquery-1.9.1.js"></script>
-<script src="js/index.js"></script>
+<img src="images/arr.png" id="arrow">
 </body>
 </html>
+<script src="index.js"></script>
